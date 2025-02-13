@@ -1,0 +1,28 @@
+{
+  "listes": [
+    {
+      "id": 1,
+      "nom": "Nicolas"
+    },
+    {
+      "id": 2,
+      "nom": "Wendy"
+    },
+    {
+      "id": 3,
+      "nom": "Odile"
+    }
+  ],
+  "courses":[
+    {
+      "idItem":0,
+      "nom":null,
+      "magasin":null
+    }
+  ]
+  , 
+  "profile": {
+    "name": "typicode"
+  }
+}
+
