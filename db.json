@@ -2,7 +2,14 @@
   "listes": [
     {
       "id": 1,
-      "nom": "Nicolas"
+      "nom": "Nicolas",
+      "courses":[
+        { 
+          "idItem":0,
+          "nom":null,
+          "magasin":null
+        }
+      ]
     },
     {
       "id": 2,
@@ -13,14 +20,8 @@
       "nom": "Odile"
     }
   ],
-  "courses":[
-    { 
-      "idItem":0,
-      "nom":null,
-      "magasin":null
-    }
-  ]
-  , 
+
+  
   "profile": {
     "name": "typicode"
   }
