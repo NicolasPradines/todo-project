@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nom": "Nicolas",
-      "photoSrc" : "@/assets/nicolas.jpg",
+      "photoSrc" : "/assets/nicolas.jpg",
       "courses":[
         { 
           "idItem":0,
@@ -15,6 +15,7 @@
     {
       "id": 2,
       "nom": "Wendy",
+      "photoSrc" : "/assets/wendy.jpg",
       "courses":[
         { 
           "idItem":0,
@@ -26,6 +27,7 @@
     {
       "id": 3,
       "nom": "Odile",
+      "photoSrc" : "/assets/odile.jpg",
       "courses":[
         { 
           "idItem":0,

@@ -10,7 +10,7 @@ defineProps({
 <template>
   <router-link class="liste-link" :to="{ name: 'details', params: { id: liste.id } }">
     <div class="liste-card">
-      <img src="{{ liste.photoSrc }}" alt="">
+      <img :src="liste.photoSrc" alt="">
       <h2>{{ liste.nom }}</h2>
     </div>
     </router-link>
