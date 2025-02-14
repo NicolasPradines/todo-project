@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nom": "Nicolas",
-      "photos" : "@/assets/nicolas.jpg",
+      "photoSrc" : "@/assets/nicolas.jpg",
       "courses":[
         { 
           "idItem":0,
