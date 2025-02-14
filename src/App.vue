@@ -1,35 +1,28 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
+        <div class="icone"><i class="fa-regular fa-rectangle-list"></i></div>
+        <h1 class="logo">
+        Listes</h1>
   </header>
 
   <RouterView />
 </template>
 
 <style scoped>
+
 header {
-  line-height: 1.5;
-  max-height: 100vh;
+    padding-left: 80px;
+    position: relative;
+    display:flex;
+    align-items: center;
+    min-height: 80px;
+    margin-bottom: 20px;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
 
 nav {
   width: 100%;
@@ -56,23 +49,37 @@ nav a:first-of-type {
   border: 0;
 }
 
+
 @media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+  
 
   .logo {
     margin: 0 2rem 0 0;
   }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+  h1{
+    font-weight: 600;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 50px;
+    line-height: 50px;
   }
-
+  .icone{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #97a6ff;
+    padding: 0px 0px;
+    position: absolute;
+    text-align: center;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    }
+    .icone i{
+      font-size: 40px;
+      color: #fff;
+    }
   nav {
     text-align: left;
     margin-left: -1rem;

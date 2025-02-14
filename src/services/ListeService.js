@@ -5,13 +5,15 @@ const apiListes = axios.create({
   withCredentials: false,
   headers: {
     Accept: 'application/json',
-    'Content-Type': 'application/json'
-  }
+    'Content-Type': 'application/json',
+  },
 })
 
 export default {
-  getlistes() {
-    return apiListes.get('/listes'
-    )
+  getListes() {
+    return apiListes.get('/listes')
   },
+  getListesInfo(id){
+    return apiListes.get('/listes/' + id)
+  }
 }
