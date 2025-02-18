@@ -13,7 +13,10 @@ export default {
   getListes() {
     return apiListes.get('/listes')
   },
-  getListesInfo(id){
+  getListesInfo(id) {
     return apiListes.get('/listes/' + id)
-  }
+  },
+  updateListes(id, patch) {
+    return apiListes.put('/listes/' + id, patch)
+  },
 }

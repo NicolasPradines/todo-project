@@ -3,44 +3,42 @@
     {
       "id": 1,
       "nom": "Nicolas",
-      "photoSrc" : "/src/assets/nicolas.jpg",
-      "courses":[
-        { 
-          "idItem":0,
-          "nom":null,
-          "magasin":null
+      "photoSrc": "/src/assets/nicolas.jpg",
+      "courses": [
+        {
+          "nom": null,
+          "magasin": null,
+          "completed": false
         }
       ]
     },
     {
       "id": 2,
       "nom": "Wendy",
-      "photoSrc" : "/src/assets/wendy.jpg",
-      "courses":[
-        { 
-          "idItem":0,
-          "nom":null,
-          "magasin":null
+      "photoSrc": "/src/assets/wendy.jpg",
+      "courses": [
+        {
+          "nom": null,
+          "magasin": null,
+          "completed": false
         }
       ]
     },
     {
       "id": 3,
       "nom": "Odile",
-      "photoSrc" : "/src/assets/odile.jpg",
-      "courses":[
-        { 
-          "idItem":0,
-          "nom":null,
-          "magasin":null
+      "photoSrc": "/src/assets/odile.jpg",
+      "courses": [
+        {
+          "nom": null,
+          "magasin": null,
+          "completed": false
         }
       ]
     }
   ],
 
-  
   "profile": {
     "name": "typicode"
   }
 }
-

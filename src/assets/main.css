@@ -1,10 +1,15 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+  display: grid;
+margin: 0px auto;
+  grid-template-columns: 1fr;
+  padding: 25px 2rem;
+}
+body {
+
+  display: flex;
+  place-items: baseline;
 }
 
 a,
@@ -22,16 +27,6 @@ a,
 }
 
 @media (min-width: 1024px) {
-  body {
-
-    display: flex;
-    place-items: baseline;
-  }
-
-  #app {
-    display: grid;
-
-    grid-template-columns: 1fr;
-    padding: 25px 2rem;
-  }
+ 
+  
 }
