@@ -1,11 +1,7 @@
 <script setup>
 import { onMounted, ref } from 'vue'
-import { storeToRefs } from 'pinia'
+import ListElements from '@/components/ListElements.vue'
 import ListeService from '@/services/ListeService.js'
-
-import { useCoursesList } from '@/stores/allListe'
-const coursesStore = useCoursesList()
-const { coursesList } = storeToRefs(coursesStore)
 
 const props = defineProps({
   id: {
@@ -13,7 +9,6 @@ const props = defineProps({
   },
 })
 
-const itemCourse = ref('')
 const listeInfo = ref('')
 
 ListeService.getListesInfo(props.id)
@@ -23,17 +18,6 @@ ListeService.getListesInfo(props.id)
   .catch((error) => {
     console.log(error)
   })
-//console.log(listeInfo.value.nom)
-
-function addItemAndClear(item) {
-  if (item.length === 0) {
-    return
-  }
-  coursesStore.addCourse(item)
-  itemCourse.value = ''
-}
-console.log(coursesList)
-//updateListes
 </script>
 
 <template>
@@ -53,15 +37,7 @@ console.log(coursesList)
       </form>
     </div>
 
-    <div v-for="item in coursesList" :key="item.idItem" class="item">
-      <div class="content">
-        <span :class="{ completed: item.completed }">{{ item.nom }}</span
-        >&nbsp;&nbsp;&nbsp;
-        <!--<span @click.stop="toggleCompleted(todo.id)">&#10004;</span>
-        &nbsp;&nbsp;&nbsp;
-        <span @click="deleteTodo(todo.id)">&#10060;</span> -->
-      </div>
-    </div>
+    <ListElements :courses="listeInfo.courses" />
   </main>
 
   <!--

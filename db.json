@@ -6,8 +6,8 @@
       "photoSrc": "/src/assets/nicolas.jpg",
       "courses": [
         {
-          "nom": null,
-          "magasin": null,
+          "nom": "test",
+          "magasin": "test",
           "completed": false
         }
       ]
